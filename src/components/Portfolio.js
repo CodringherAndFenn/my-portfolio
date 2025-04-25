@@ -22,7 +22,7 @@ const Portfolio = () => {
         "Integrated complex companion AI pathfinding in procedurally generated terrain",
         "Managed scope to deliver a complete vertical slice within the 4-month timeline"
       ],
-      thumbnail: "https://placehold.co/600x400",
+      thumbnail: "https://i.postimg.cc/hvYrgmMC/Highres-Screenshot-2024-04-12-15-06-49.png",
       images: [
         "https://placehold.co/800x450?text=Combat+System+Demo",
         "https://placehold.co/800x450?text=Environment+Showcase",
