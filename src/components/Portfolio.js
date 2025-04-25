@@ -220,13 +220,13 @@ const Portfolio = () => {
   // Project detail view
   const ProjectDetail = ({ project }) => {
     return (
-      <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4 overflow-y-auto">
-        <div className="bg-white rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto">
+      <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4 overflow-y-auto">
+        <div className="bg-gray-800 rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto border border-gray-700 text gray-100 shadow-xl">
           <div className="sticky top-0 bg-white p-4 border-b flex justify-between items-center">
-            <h2 className="text-2xl font-bold">{project.title}</h2>
+            <h2 className="text-2xl font-bold text-blue-300">{project.title}</h2>
             <button 
               onClick={() => setActiveProject(null)}
-              className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
+              className="p-2 bg-gray-700 rounded-full hover:bg-gray-600 text-gray-300"
             >
               ✕
             </button>
@@ -236,7 +236,7 @@ const Portfolio = () => {
             {/* Project Image Gallery */}
             <div className="mb-8">
               <div className="relative">
-                <div className="relative h-80 bg-gray-100 rounded-lg overflow-hidden">
+                <div className="relative h-80 bg-gray-900 rounded-lg overflow-hidden border border-gray-700">
                   <img 
                     src={project.images[currentImageIndex]} 
                     alt={`${project.title} showcase ${currentImageIndex + 1}`} 
@@ -249,13 +249,13 @@ const Portfolio = () => {
                   <>
                     <button 
                       onClick={prevImage}
-                      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70"
+                      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-blue-700 transition-colors"
                     >
                       ←
                     </button>
                     <button 
                       onClick={nextImage}
-                      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70"
+                      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-blue-700 transition-colors"
                     >
                       →
                     </button>
@@ -271,7 +271,7 @@ const Portfolio = () => {
                       key={index}
                       onClick={() => setCurrentImageIndex(index)}
                       className={`w-3 h-3 rounded-full ${
-                        currentImageIndex === index ? 'bg-blue-600' : 'bg-gray-300'
+                        currentImageIndex === index ? 'bg-blue-500' : 'bg-gray-600'
                       }`}
                       aria-label={`Go to image ${index + 1}`}
                     />
@@ -281,11 +281,11 @@ const Portfolio = () => {
             </div>
             
             <h3 className="text-xl font-semibold mb-2">{project.subtitle}</h3>
-            <p className="mb-6">{project.description}</p>
+            <p className="mb-6 text-gray-300">{project.description}</p>
             
             <div className="mb-6">
-              <h4 className="text-lg font-bold mb-3">My Contributions</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <h4 className="text-lg font-bold mb-3 text-blue-200">My Contributions</h4>
+              <ul className="list-disc pl-6 space-y-2 text-gray-300">
                 {project.contributions.map((contribution, index) => {
                   const [title, description] = contribution.split(': ');
                   return (
@@ -299,7 +299,7 @@ const Portfolio = () => {
             
             <div className="mb-6">
               <h4 className="text-lg font-bold mb-3">Key Challenges Overcome</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <ul className="list-disc pl-6 space-y-2 text-gray-300">
                 {project.challenges.map((challenge, index) => {
                   const [title, description] = challenge.includes(': ') 
                     ? challenge.split(': ') 
@@ -309,7 +309,7 @@ const Portfolio = () => {
                     <li key={index}>
                       {title ? (
                         <>
-                          <span className="font-bold">{title}:</span> {description}
+                          <span className="font-bold text-blue-200">{title}:</span> {description}
                         </>
                       ) : (
                         challenge
@@ -321,12 +321,12 @@ const Portfolio = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-bold mb-3">Technologies Used</h4>
+              <h4 className="text-lg font-bold mb-3 text-blue-200">Technologies Used</h4>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, index) => (
                   <span 
                     key={index} 
-                    className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm"
+                    className="px-3 py-1 bg-blue-900 text-blue-100 rounded-full text-sm border border-blue-700"
                   >
                     {tech}
                   </span>
@@ -340,21 +340,21 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-900 text-gray-100">
       {/* Header & Navigation */}
-      <header className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white py-6">
+      <header className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-6 shadow-md">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-3xl font-bold">Game Developer Portfolio</h1>
-              <p className="mt-1">Creative Media and Game Technologies Student</p>
+              <h1 className="text-3xl font-bold text-blue-300">Game Developer Portfolio</h1>
+              <p className="mt-1 text-blue-100">Creative Media and Game Technologies Student</p>
             </div>
             <nav>
               <ul className="flex space-x-6">
-                <li><a href="#projects" className="hover:text-blue-200">Projects</a></li>
-                <li><a href="#leadership" className="hover:text-blue-200">Leadership</a></li>
-                <li><a href="#skills" className="hover:text-blue-200">Skills</a></li>
-                <li><a href="#about" className="hover:text-blue-200">About</a></li>
+                <li><a href="#projects" className="hover:text-blue-300 transition-colors">Projects</a></li>
+                <li><a href="#leadership" className="hover:text-blue-300 transition-colors">Leadership</a></li>
+                <li><a href="#skills" className="hover:text-blue-300 transition-colors">Skills</a></li>
+                <li><a href="#about" className="hover:text-blue-300 transition-colors">About</a></li>
               </ul>
             </nav>
           </div>
@@ -364,13 +364,13 @@ const Portfolio = () => {
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Projects Section */}
         <section id="projects" className="mb-20">
-          <h2 className="text-3xl font-bold mb-10 text-center">Featured Projects</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center text-blue-300">Featured Projects</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map(project => (
               <div 
                 key={project.id} 
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 border border-gray-700"
               >
                 <img 
                   src={project.thumbnail} 
@@ -378,13 +378,13 @@ const Portfolio = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-sm text-gray-600 italic mb-3">{project.subtitle}</p>
-                  <p className="text-gray-700 mb-4 truncate">{project.description}</p>
+                  <h3 className="text-xl font-bold mb-2 text-blue-300">{project.title}</h3>
+                  <p className="text-sm text-gray-400 italic mb-3">{project.subtitle}</p>
+                  <p className="text-gray-300 mb-4 truncate">{project.description}</p>
                   
                   <button 
                     onClick={() => openProjectDetail(project)}
-                    className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
+                    className="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition-colors shadow-md"
                   >
                     View Details
                   </button>
@@ -396,26 +396,26 @@ const Portfolio = () => {
         
         {/* Leadership Section */}
         <section id="leadership" className="mb-20">
-          <h2 className="text-3xl font-bold mb-10 text-center">Leadership Experience</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center text-blue-300">Leadership Experience</h2>
           
-          <div className="bg-white rounded-lg shadow-md p-8">
+          <div className="bg-gray-800 rounded-lg shadow-lg p-8 border border-gray-700">
             <div className="flex flex-col md:flex-row justify-between mb-6">
               <div>
-                <h3 className="text-2xl font-bold">{leadership.position}</h3>
-                <p className="text-xl text-gray-700">{leadership.company}</p>
+                <h3 className="text-2xl font-bold text-blue-300">{leadership.position}</h3>
+                <p className="text-xl text-gray-300">{leadership.company}</p>
               </div>
             </div>
             
-            <p className="mb-6 text-gray-700">{leadership.description}</p>
+            <p className="mb-6 text-gray-300">{leadership.description}</p>
             
             <div className="mb-6">
-              <h4 className="text-lg font-bold mb-3">Key Responsibilities</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <h4 className="text-lg font-bold mb-3 text-blue-200">Key Responsibilities</h4>
+              <ul className="list-disc pl-6 space-y-2 text-gray-300">
                 {leadership.responsibilities.map((responsibility, index) => {
                   const [title, description] = responsibility.split(': ');
                   return (
                     <li key={index}>
-                      <span className="font-bold">{title}:</span> {description}
+                      <span className="font-bold text-blue-200">{title}:</span> {description}
                     </li>
                   );
                 })}
@@ -423,13 +423,13 @@ const Portfolio = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-bold mb-3">Significant Challenges Overcome</h4>
-              <ul className="list-disc pl-6 space-y-2">
+              <h4 className="text-lg font-bold mb-3 text-blue-200">Significant Challenges Overcome</h4>
+              <ul className="list-disc pl-6 space-y-2 text-gray-300">
                 {leadership.challenges.map((challenge, index) => {
                   const [title, description] = challenge.split(': ');
                   return (
                     <li key={index}>
-                      <span className="font-bold">{title}:</span> {description}
+                      <span className="font-bold text-blue-200">{title}:</span> {description}
                     </li>
                   );
                 })}
@@ -440,16 +440,16 @@ const Portfolio = () => {
         
         {/* Skills Section */}
         <section id="skills" className="mb-20">
-          <h2 className="text-3xl font-bold mb-10 text-center">Technical Skills</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center text-blue-300">Technical Skills</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skillGroup, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md p-6">
+              <div key={index} className="bg-gray-800 rounded-lg shadow-lg p-6 border border-gray-700">
                 <h3 className="text-xl font-bold mb-4">{skillGroup.category}</h3>
                 <ul className="space-y-2">
                   {skillGroup.skills.map((skill, i) => (
-                    <li key={i} className="flex items-center">
-                      <span className="mr-2 text-blue-600">•</span>
+                    <li key={i} className="flex items-center text-gray-300">
+                      <span className="mr-2 text-blue-400">•</span>
                       {skill}
                     </li>
                   ))}
@@ -461,25 +461,25 @@ const Portfolio = () => {
         
         {/* About Me Section */}
         <section id="about">
-          <h2 className="text-3xl font-bold mb-10 text-center">About Me</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center text-blue-300">About Me</h2>
           
-          <div className="bg-white rounded-lg shadow-md p-8">
+          <div className="bg-gray-800 rounded-lg shadow-lg p-8 border border-gray-700">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <img 
                 src="https://placehold.co/400x400" 
                 alt="Profile" 
-                className="w-40 h-40 rounded-full object-cover"
+                className="w-40 h-40 rounded-full object-cover border-2 border-blue-400"
               />
               
-              <div>
+              <div className="text-gray-300">
                 <p className="mb-4">
-                  I'm a 4th year <strong>Creative Media and Game Technologies (CMGT)</strong> student at the Hanze University of Applied Sciences with a focus on game design, level design, and programming.
+                  I'm a 4th year <strong className="text-blue-300">Creative Media and Game Technologies (CMGT)</strong> student at the Hanze University of Applied Sciences with a focus on game design, level design, and programming.
                 </p>
                 <p className="mb-4">
-                  My background spans multiple game engines and development methodologies, with particular expertise in <strong>Unity C# development</strong> and <strong>Unreal Engine level design</strong>.
+                  My background spans multiple game engines and development methodologies, with particular expertise in <strong className="text-blue-300">Unity C# development</strong> and <strong className="text-blue-300">Unreal Engine level design</strong>.
                 </p>
                 <p>
-                  I'm passionate about creating meaningful player experiences through thoughtful design and innovative technology integration. My portfolio demonstrates my ability to <strong>lead teams</strong>, <strong>overcome technical challenges</strong>, and <strong>deliver high-quality projects</strong> under constraints.
+                  I'm passionate about creating meaningful player experiences through thoughtful design and innovative technology integration. My portfolio demonstrates my ability to <strong className="text-blue-300">lead teams</strong>, <strong className="text-blue-300">overcome technical challenges</strong>, and <strong className="text-blue-300">deliver high-quality projects</strong> under constraints.
                 </p>
               </div>
             </div>
@@ -487,10 +487,10 @@ const Portfolio = () => {
         </section>
       </main>
       
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-gray-950 text-white py-8 mt-12 border-t border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="mb-2">© 2025 Game Developer Portfolio</p>
-          <p>Contact: <a href="mailto:contact@example.com" className="text-blue-300 hover:underline">contact@example.com</a></p>
+          <p>Contact: <a href="ivanovjucanmihai@gmail.com" className="text-blue-300 hover:underline">ivanovjucanmihai@gmail.com</a></p>
         </div>
       </footer>
       
