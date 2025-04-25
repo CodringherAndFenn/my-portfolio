@@ -70,6 +70,12 @@ const Portfolio = () => {
         "Delivered a playable, balanced PvP experience within a one-month timeframe"
       ],
       thumbnail: "https://placehold.co/600x400",
+      images: [
+        "https://placehold.co/800x450?text=Spell+Casting+Effects",
+        "https://placehold.co/800x450?text=Multiplayer+Arena",
+        "https://placehold.co/800x450?text=Character+Abilities+Gif",
+        "https://placehold.co/800x450?text=Gameplay+Demo"
+      ],
       technologies: ["Unity", "C#", "Multiplayer"]
     },
     {
@@ -88,6 +94,11 @@ const Portfolio = () => {
         "Demonstrated 80% development time reduction compared to traditional methods"
       ],
       thumbnail: "https://placehold.co/600x400",
+      images: [
+        "https://placehold.co/800x450?text=AI+Workflow+Demo",
+        "https://placehold.co/800x450?text=Procedural+Generation",
+        "https://placehold.co/800x450?text=Roguelike+Elements+Gif"
+      ],
       technologies: ["Unity", "C#", "LLM API", "AI Workflows"]
     },
     {
@@ -105,6 +116,11 @@ const Portfolio = () => {
         "Collaborated with subject matter experts to ensure training effectiveness"
       ],
       thumbnail: "https://placehold.co/600x400",
+      images: [
+        "https://placehold.co/800x450?text=VR+Interaction+Demo",
+        "https://placehold.co/800x450?text=Training+Environment",
+        "https://placehold.co/800x450?text=AI+Response+System"
+      ],
       technologies: ["Unreal Engine", "Blueprint", "VR", "GPT API", "ElevenLabs API"]
     }
   ];
@@ -174,6 +190,30 @@ const Portfolio = () => {
     }
   ];
 
+
+  // Handle image navigation
+  const nextImage = () => {
+    if (activeProject) {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === activeProject.images.length - 1 ? 0 : prevIndex + 1
+      );
+    }
+  };
+
+  const prevImage = () => {
+    if (activeProject) {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === 0 ? activeProject.images.length - 1 : prevIndex - 1
+      );
+    }
+  };
+
+  // Reset image index when changing projects
+  const openProjectDetail = (project) => {
+    setCurrentImageIndex(0);
+    setActiveProject(project);
+  };
+
   // Project detail view
   const ProjectDetail = ({ project }) => {
     return (
@@ -190,11 +230,52 @@ const Portfolio = () => {
           </div>
           
           <div className="p-6">
-            <img 
-              src={project.thumbnail} 
-              alt={project.title} 
-              className="w-full h-64 object-cover rounded-lg mb-6"
-            />
+            {/* Project Image Gallery */}
+            <div className="mb-8">
+              <div className="relative">
+                <div className="relative h-80 bg-gray-100 rounded-lg overflow-hidden">
+                  <img 
+                    src={project.images[currentImageIndex]} 
+                    alt={`${project.title} showcase ${currentImageIndex + 1}`} 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                
+                {/* Navigation Arrows */}
+                {project.images.length > 1 && (
+                  <>
+                    <button 
+                      onClick={prevImage}
+                      className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70"
+                    >
+                      ←
+                    </button>
+                    <button 
+                      onClick={nextImage}
+                      className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70"
+                    >
+                      →
+                    </button>
+                  </>
+                )}
+              </div>
+              
+              {/* Image Indicators */}
+              {project.images.length > 1 && (
+                <div className="flex justify-center mt-3 space-x-2">
+                  {project.images.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImageIndex(index)}
+                      className={`w-3 h-3 rounded-full ${
+                        currentImageIndex === index ? 'bg-blue-600' : 'bg-gray-300'
+                      }`}
+                      aria-label={`Go to image ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
             
             <h3 className="text-xl font-semibold mb-2">{project.subtitle}</h3>
             <p className="mb-6">{project.description}</p>
