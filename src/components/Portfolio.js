@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 const Portfolio = () => {
   const [activeProject, setActiveProject] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   // Project data
   const projects = [
@@ -22,6 +23,12 @@ const Portfolio = () => {
         "Managed scope to deliver a complete vertical slice within the 4-month timeline"
       ],
       thumbnail: "https://placehold.co/600x400",
+      images: [
+        "https://placehold.co/800x450?text=Combat+System+Demo",
+        "https://placehold.co/800x450?text=Environment+Showcase",
+        "https://placehold.co/800x450?text=Boss+Battle+Gif",
+        "https://placehold.co/800x450?text=Character+Customization"
+      ],
       technologies: ["Unity", "C#", "Custom Tools"]
     },
     {
@@ -40,6 +47,11 @@ const Portfolio = () => {
         "Completed comprehensive development with minimal team support (two-person project)"
       ],
       thumbnail: "https://placehold.co/600x400",
+      images: [
+        "https://placehold.co/800x450?text=Gameplay+Mechanics",
+        "https://placehold.co/800x450?text=Visual+Style+Demo",
+        "https://placehold.co/800x450?text=Level+Progression+Gif"
+      ],
       technologies: ["GameMaker", "GML", "Pixel Art"]
     },
     {
