@@ -380,7 +380,7 @@ const Portfolio = () => {
                   <p className="text-gray-700 mb-4 truncate">{project.description}</p>
                   
                   <button 
-                    onClick={() => setActiveProject(project)}
+                    onClick={() => openProjectDetail(project)}
                     className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors"
                   >
                     View Details
