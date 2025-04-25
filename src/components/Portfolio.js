@@ -24,10 +24,13 @@ const Portfolio = () => {
       ],
       thumbnail: "https://i.postimg.cc/hvYrgmMC/Highres-Screenshot-2024-04-12-15-06-49.png",
       images: [
-        "https://placehold.co/800x450?text=Combat+System+Demo",
-        "https://placehold.co/800x450?text=Environment+Showcase",
-        "https://placehold.co/800x450?text=Boss+Battle+Gif",
-        "https://placehold.co/800x450?text=Character+Customization"
+        "https://i.postimg.cc/zBKx60VL/Riding-Mount-Spawn.gif",
+        "https://i.postimg.cc/SxxtR6t5/Fighting-Small-Enemy-village.gif",
+        "https://i.postimg.cc/TPy7qRxJ/Boss-Fight.gif",
+        "https://i.postimg.cc/FsZBhWG3/diagetic-system.gif",
+        "https://i.postimg.cc/P5VVwCgq/Auto-Landscape-Tool.gif",
+        "https://i.postimg.cc/tgb8L0ss/Highres-Screenshot-2024-04-12-15-20-05.png",
+        "https://i.postimg.cc/KjCHfCXv/Highres-Screenshot-2024-04-12-15-13-54.png"
       ],
       technologies: ["Unity", "C#", "Custom Tools"]
     },
