@@ -222,7 +222,7 @@ const Portfolio = () => {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4 overflow-y-auto">
         <div className="bg-gray-800 rounded-lg max-w-4xl w-full max-h-screen overflow-y-auto border border-gray-700 text gray-100 shadow-xl">
-          <div className="sticky top-0 bg-white p-4 border-b flex justify-between items-center">
+          <div className="sticky top-0 bg-gray-900 p-4 border-b border-gray-700 flex justify-between items-center">
             <h2 className="text-2xl font-bold text-blue-300">{project.title}</h2>
             <button 
               onClick={() => setActiveProject(null)}
