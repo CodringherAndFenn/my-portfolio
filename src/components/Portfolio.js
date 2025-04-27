@@ -24,7 +24,7 @@ const Portfolio = () => {
       ],
       thumbnail: "https://i.postimg.cc/hvYrgmMC/Highres-Screenshot-2024-04-12-15-06-49.png",
       images: [
-        "https://i.postimg.cc/zBKx60VL/Riding-Mount-Spawn.gif",
+        "https://i.postimg.cc/W3HMnC9H/riding-7-15-ezgif-com-video-to-gif-converter.gif",
         "https://i.postimg.cc/SxxtR6t5/Fighting-Small-Enemy-village.gif",
         "https://i.postimg.cc/TPy7qRxJ/Boss-Fight.gif",
         "https://i.postimg.cc/FsZBhWG3/diagetic-system.gif",
