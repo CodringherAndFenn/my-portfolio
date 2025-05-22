@@ -494,7 +494,7 @@ const Portfolio = () => {
           <div className="bg-gray-800 rounded-lg shadow-lg p-8 border border-gray-700">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <img 
-                src="https://placehold.co/https://i.postimg.cc/VL4X8GH2/eu.jpg" 
+                src="https://i.postimg.cc/VL4X8GH2/eu.jpg" 
                 alt="Profile" 
                 className="w-40 h-40 rounded-full object-cover border-2 border-blue-400"
               />
