@@ -144,7 +144,7 @@ const Portfolio = () => {
       ],
       thumbnail: "https://i.postimg.cc/sx9qX4Cv/police.png",
       images: [
-        "https://i.postimg.cc/L62GWwjf/undernda.jpg"
+        "https://i.postimg.cc/tJq7vyyJ/politie.png"
       ],
       technologies: ["Unreal Engine", "Blueprint", "VR", "GPT API", "ElevenLabs API", "Custom Plugins"]
     }
@@ -153,7 +153,7 @@ const Portfolio = () => {
   // Leadership experience
   const leadership = {
     title: "Leadership Experience",
-    position: "CEO and Founder",
+    position: "Founder",
     company: "KIBO Entertainment",
     description: "Led a 4-person indie game studio through a critical development phase, delivering our vertical slice RPG Mead and Monsters.",
     responsibilities: [
@@ -162,9 +162,10 @@ const Portfolio = () => {
       "Resource Optimization: Delivered complex systems despite limited team size and timeline"
     ],
     challenges: [
+      "Convincing stakeholders: Business plans and presentations in order to convince the university for us to intern in our own company",
       "Production Bottlenecks: Implemented agile methodology to prioritize core features",
-      "Technical Limitations: Developed custom tools to streamline environment creation",
-      "Scope Management: Maintained feature quality while meeting ambitious deadlines"
+      "Technical Limitations: New engine, new tools",
+      "Scope Management: Maintained feature quality while meeting the initial set deadline"
     ]
   };
 
@@ -175,24 +176,26 @@ const Portfolio = () => {
       skills: [
         "Game & Level Design",
         "Narrative Design",
-        "Systems Design"
+        "Systems Design",
+        "Using tools like Miro, Notion or the Office Suite"
       ]
     },
     {
       category: "Programming",
       skills: [
         "C#",
+        "GDScript",
         "Blueprint Visual Scripting",
         "GameMaker Language",
-        "JavaScript"
+        "JavaScript and Python basics"
       ]
     },
     {
       category: "3D Development",
       skills: [
-        "Asset Creation",
-        "Texturing",
-        "Animation Implementation"
+        "Asset Creation - Blender and Aseprite",
+        "Texturing - Blender, Krita and Substance Painter",
+        "Animation Implementation - Cascadeur"
       ]
     },
     {
@@ -200,7 +203,7 @@ const Portfolio = () => {
       skills: [
         "LLM API Implementation",
         "AI-Assisted Development",
-        "Prompt Engineering"
+        "Understanding of AI Tools and their possibilities"
       ]
     },
     {
@@ -208,9 +211,12 @@ const Portfolio = () => {
       skills: [
         "Unity",
         "Unreal Engine",
+        "Godot",
         "GameMaker",
         "Blender",
-        "Adobe Creative Suite"
+        "Cascadeur",
+        "Adobe Creative Suite",
+        "Gaea",
       ]
     }
   ];
@@ -488,7 +494,7 @@ const Portfolio = () => {
           <div className="bg-gray-800 rounded-lg shadow-lg p-8 border border-gray-700">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <img 
-                src="https://placehold.co/400x400" 
+                src="https://placehold.co/https://i.postimg.cc/VL4X8GH2/eu.jpg" 
                 alt="Profile" 
                 className="w-40 h-40 rounded-full object-cover border-2 border-blue-400"
               />
@@ -498,10 +504,10 @@ const Portfolio = () => {
                   I'm a 4th year <strong className="text-blue-300">Creative Media and Game Technologies (CMGT)</strong> student at the Hanze University of Applied Sciences with a focus on game design, level design, and programming.
                 </p>
                 <p className="mb-4">
-                  My background spans multiple game engines and development methodologies, with particular expertise in <strong className="text-blue-300">Unity C# development</strong> and <strong className="text-blue-300">Unreal Engine level design</strong>.
+                  My background spans multiple game engines and development methodologies, with particular expertise in <strong className="text-blue-300">Unity C# development, Godot GD script development</strong> and <strong className="text-blue-300">Unreal Engine level design</strong>.
                 </p>
                 <p>
-                  I'm passionate about creating meaningful player experiences through thoughtful design and innovative technology integration. My portfolio demonstrates my ability to <strong className="text-blue-300">lead teams</strong>, <strong className="text-blue-300">overcome technical challenges</strong>, and <strong className="text-blue-300">deliver high-quality projects</strong> under constraints.
+                  I'm passionate about creating meaningful player experiences through immersive design and innovative technology integration. My portfolio demonstrates my ability to <strong className="text-blue-300">perform under pressure</strong>, <strong className="text-blue-300">overcome technical challenges</strong>, and <strong className="text-blue-300">deliver high-quality projects</strong> under constraints.
                 </p>
               </div>
             </div>
