@@ -116,9 +116,9 @@ const Portfolio = () => {
         "UI/UX Implementation: Designed intuitive controls and feedback systems for drift scoring dot dithering"
       ],
       challenges: [
-        "Balanced realistic physics with arcade-style accessibility for broad appeal",
-        "Optimized complex vehicle calculations while maintaining smooth 60fps performance",
-        "Designed challenging but achievable delivery objectives that encourage mastery"
+        "Physics Balance: Balanced realistic physics with arcade-style accessibility for broad appeal",
+        "Performance Optimization: Optimized complex vehicle calculations while maintaining smooth 60fps performance",
+        "Game Design: Designed challenging but achievable delivery objectives that encourage mastery"
       ],
       thumbnail: "https://placehold.co/600x400",
       images: [
