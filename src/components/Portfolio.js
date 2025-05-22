@@ -113,7 +113,7 @@ const Portfolio = () => {
         "Vehicle Physics Programming: Developed responsive drift mechanics with realistic handling",
         "Game Design: Created progression system linking drift performance to delivery efficiency",
         "Level Design: Built dynamic delivery routes that reward skillful drifting",
-        "UI/UX Implementation: Designed intuitive controls and feedback systems for drift scoring"
+        "UI/UX Implementation: Designed intuitive controls and feedback systems for drift scoring dot dithering"
       ],
       challenges: [
         "Balanced realistic physics with arcade-style accessibility for broad appeal",
