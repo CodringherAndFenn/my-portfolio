@@ -105,7 +105,26 @@ const Portfolio = () => {
       technologies: ["Unity", "C#", "LLM API", "AI Workflows"]
     },
     {
-      id: 5,
+    id: 5,
+      title: "Dorifto Delivery",
+      subtitle: "Business has been going down, we have to stand out! Drift and Deliver, that's how!",
+      description: "An arcade-style delivery game where drifting is how your business succeeds",
+      contributions: [
+        "Vehicle Physics Programming: Developed responsive drift mechanics with realistic handling",
+        "Game Design: Created progression system linking drift performance to delivery efficiency",
+        "Level Design: Built dynamic delivery routes that reward skillful drifting",
+        "UI/UX Implementation: Designed intuitive controls and feedback systems for drift scoring"
+      ],
+      challenges: [
+        "Balanced realistic physics with arcade-style accessibility for broad appeal",
+        "Optimized complex vehicle calculations while maintaining smooth 60fps performance",
+        "Designed challenging but achievable delivery objectives that encourage mastery"
+      ],
+      thumbnail: "https://placehold.co/600x400",
+      technologies: ["Unity", "C#", "Physics Simulation", "Mobile Optimization"]
+    },
+    {
+      id: 6,
       title: "Police VR Training Project",
       subtitle: "A specialized VR training application for Dutch Police forces",
       description: "While most details remain under NDA, this project showcases my ability to integrate cutting-edge AI technology with immersive virtual reality experiences.",
