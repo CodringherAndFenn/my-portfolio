@@ -50,11 +50,13 @@ const Portfolio = () => {
         "Transformed complex emotional concepts (anxiety) into tangible gameplay mechanics",
         "Completed comprehensive development with minimal team support (two-person project)"
       ],
-      thumbnail: "https://placehold.co/600x400",
+      thumbnail: "https://i.postimg.cc/mrvD4BS8/ezgif-frame-005.png",
       images: [
-        "https://placehold.co/800x450?text=Gameplay+Mechanics",
-        "https://placehold.co/800x450?text=Visual+Style+Demo",
-        "https://placehold.co/800x450?text=Level+Progression+Gif"
+        "https://i.postimg.cc/QMy7W2JT/introlevel-all-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/CLcx1jNZ/introlevel-fighting-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/9fjKHk7y/level2-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/Jz3KZzsB/stationlevel-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/R0XRppQS/lastlevels-ezgif-com-video-to-gif-converter.gif",
       ],
       technologies: ["GameMaker", "GML", "Pixel Art"]
     },
