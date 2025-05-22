@@ -14,23 +14,24 @@ const Portfolio = () => {
       contributions: [
         "Game & Level Design: Created the narrative structure and environmental storytelling",
         "Custom Tool Development: Built an automated landscaping system with performance-optimized stylized grass",
-        "Combat System: Implemented responsive combat mechanics including boss encounters",
+        "Combat System: Designed the combat system then implemented by the programmer",
         "Diegetic Health System: Designed immersive health visualization that enhances player feedback"
       ],
       challenges: [
-        "Balanced visual fidelity with performance optimization across diverse environments",
-        "Integrated complex companion AI pathfinding in procedurally generated terrain",
+        "Balanced visual fidelity with performance optimization in UE5, a new engine for us at the time",
+        "Stood out with the diagetic system",
+        "Integrated complex companion AI pathfinding",
         "Managed scope to deliver a complete vertical slice within the 4-month timeline"
       ],
       thumbnail: "https://i.postimg.cc/hvYrgmMC/Highres-Screenshot-2024-04-12-15-06-49.png",
       images: [
         "https://i.postimg.cc/W3HMnC9H/riding-7-15-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/SxxtR6t5/Fighting-Small-Enemy-village.gif",
-        "https://i.postimg.cc/TPy7qRxJ/Boss-Fight.gif",
-        "https://i.postimg.cc/FsZBhWG3/diagetic-system.gif",
-        "https://i.postimg.cc/P5VVwCgq/Auto-Landscape-Tool.gif",
-        "https://i.postimg.cc/tgb8L0ss/Highres-Screenshot-2024-04-12-15-20-05.png",
-        "https://i.postimg.cc/KjCHfCXv/Highres-Screenshot-2024-04-12-15-13-54.png"
+        "https://i.postimg.cc/wMxwj8qs/villagefight-2-9-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/QxyfhyRH/bossfight-2-14-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/pdtYdbkX/diagetic-3-11-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/gkC3MFCq/terraintool-2-15-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/W4JKBvzN/villagewalk-3-11-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/9MQ94W9V/riding2-6-18-ezgif-com-video-to-gif-converter.gif"
       ],
       technologies: ["Unity", "C#", "Custom Tools"]
     },
