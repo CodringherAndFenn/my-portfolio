@@ -33,7 +33,7 @@ const Portfolio = () => {
         "https://i.postimg.cc/W4JKBvzN/villagewalk-3-11-ezgif-com-video-to-gif-converter.gif",
         "https://i.postimg.cc/9MQ94W9V/riding2-6-18-ezgif-com-video-to-gif-converter.gif"
       ],
-      technologies: ["Unity", "C#", "Custom Tools"]
+      technologies: ["UE 5.4", "Blueprinting", "Blender", "SpeedTree", "Substance Painter"]
     },
     {
       id: 2,
@@ -58,7 +58,7 @@ const Portfolio = () => {
         "https://i.postimg.cc/Jz3KZzsB/stationlevel-ezgif-com-video-to-gif-converter.gif",
         "https://i.postimg.cc/R0XRppQS/lastlevels-ezgif-com-video-to-gif-converter.gif",
       ],
-      technologies: ["GameMaker", "GML", "Pixel Art"]
+      technologies: ["GameMaker", "GML", "Pixel Art with Aseprite"]
     },
     {
       id: 3,
@@ -75,14 +75,12 @@ const Portfolio = () => {
         "Implemented complex spell interactions with limited technical resources",
         "Delivered a playable, balanced PvP experience within a one-month timeframe"
       ],
-      thumbnail: "https://placehold.co/600x400",
+      thumbnail: "https://i.postimg.cc/8sQ9kXY8/cat.png",
       images: [
-        "https://placehold.co/800x450?text=Spell+Casting+Effects",
-        "https://placehold.co/800x450?text=Multiplayer+Arena",
-        "https://placehold.co/800x450?text=Character+Abilities+Gif",
-        "https://placehold.co/800x450?text=Gameplay+Demo"
+        "https://i.postimg.cc/gJjfgZh7/wizardcat1-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/L5ZGpFNB/wizardcat2-ezgif-com-video-to-gif-converter.gif"
       ],
-      technologies: ["Unity", "C#", "Multiplayer"]
+      technologies: ["Unity", "C#", "Co-op"]
     },
     {
       id: 4,
@@ -99,13 +97,12 @@ const Portfolio = () => {
         "Balanced AI suggestions with critical implementation decisions",
         "Demonstrated 80% development time reduction compared to traditional methods"
       ],
-      thumbnail: "https://placehold.co/600x400",
+      thumbnail: "https://i.postimg.cc/Y0KBjS4y/codev.png",
       images: [
-        "https://placehold.co/800x450?text=AI+Workflow+Demo",
-        "https://placehold.co/800x450?text=Procedural+Generation",
-        "https://placehold.co/800x450?text=Roguelike+Elements+Gif"
+        "https://i.postimg.cc/v8JZ6YFy/codev-cropped-3-20-ezgif-com-video-to-gif-converter.gif",
+        "https://i.postimg.cc/CLCSBbsC/unityfpshooter-2-13-ezgif-com-video-to-gif-converter.gif"
       ],
-      technologies: ["Unity", "C#", "LLM API", "AI Workflows"]
+      technologies: ["Unity", "C#", "LLM CLAUDE API", "AI Workflows"]
     },
     {
     id: 5,
@@ -123,7 +120,7 @@ const Portfolio = () => {
         "Performance Optimization: Optimized complex vehicle calculations while maintaining smooth 60fps performance",
         "Game Design: Designed challenging but achievable delivery objectives that encourage mastery"
       ],
-      thumbnail: "https://placehold.co/600x400",
+      thumbnail: "https://i.postimg.cc/FzmC2kkm/ae86.jpg",
       images: [
         "https://placehold.co/800x450?text=AI+Workflow+Demo",
         "https://placehold.co/800x450?text=Procedural+Generation",
@@ -145,13 +142,11 @@ const Portfolio = () => {
         "Optimized performance for VR hardware constraints",
         "Collaborated with subject matter experts to ensure training effectiveness"
       ],
-      thumbnail: "https://placehold.co/600x400",
+      thumbnail: "https://i.postimg.cc/sx9qX4Cv/police.png",
       images: [
-        "https://placehold.co/800x450?text=VR+Interaction+Demo",
-        "https://placehold.co/800x450?text=Training+Environment",
-        "https://placehold.co/800x450?text=AI+Response+System"
+        "https://i.postimg.cc/L62GWwjf/undernda.jpg"
       ],
-      technologies: ["Unreal Engine", "Blueprint", "VR", "GPT API", "ElevenLabs API"]
+      technologies: ["Unreal Engine", "Blueprint", "VR", "GPT API", "ElevenLabs API", "Custom Plugins"]
     }
   ];
 
