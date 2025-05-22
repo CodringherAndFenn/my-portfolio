@@ -121,6 +121,11 @@ const Portfolio = () => {
         "Designed challenging but achievable delivery objectives that encourage mastery"
       ],
       thumbnail: "https://placehold.co/600x400",
+      images: [
+        "https://placehold.co/800x450?text=AI+Workflow+Demo",
+        "https://placehold.co/800x450?text=Procedural+Generation",
+        "https://placehold.co/800x450?text=Roguelike+Elements+Gif"
+      ],
       technologies: ["Unity", "C#", "Physics Simulation", "Mobile Optimization"]
     },
     {
