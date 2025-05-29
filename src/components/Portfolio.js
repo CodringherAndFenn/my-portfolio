@@ -463,7 +463,7 @@ const Portfolio = () => {
             {projects.map(project => (
               <div 
                 key={project.id} 
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105" style={{ color: '#eae3f2' }}
               >
                 <img 
                   src={project.thumbnail} 
