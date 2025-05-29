@@ -491,7 +491,7 @@ const Portfolio = () => {
         
         <section id="leadership" className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#eae3f2' }}>Leadership Experience</h2>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#eae3f2' }}>Leadership Experience!</h2>
             <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#de9e36' }}></div>
           </div>
           
