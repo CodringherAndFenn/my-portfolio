@@ -264,7 +264,7 @@ const Portfolio = () => {
             {/* Project Image Gallery */}
             <div className="mb-8">
               <div className="relative">
-                <div className="relative h-80 rounded-xl overflow-hidden" style={{ backgroundColor: '#d5f76e' }}>
+                <div className="relative h-80 rounded-xl overflow-hidden" style={{ backgroundColor: '#G' }}>
                   <img 
                     src={project.images[currentImageIndex]} 
                     alt={`${project.title} showcase ${currentImageIndex + 1}`} 
