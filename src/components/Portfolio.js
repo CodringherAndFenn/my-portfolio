@@ -371,7 +371,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#d5f76e' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#869c44' }}>
       {/* Modern Header with Geometric Design */}
       <header className="relative overflow-hidden" style={{ background: `linear-gradient(135deg, #52874f 0%, #5053e4 100%)` }}>
         {/* Geometric Background Elements */}
