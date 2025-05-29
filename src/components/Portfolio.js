@@ -463,7 +463,8 @@ const Portfolio = () => {
             {projects.map(project => (
               <div 
                 key={project.id} 
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                className="rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                style={{ backgroundColor: '#eae3f2' }}
               >
                 <img 
                   src={project.thumbnail} 
@@ -494,7 +495,7 @@ const Portfolio = () => {
             <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#de9e36' }}></div>
           </div>
           
-          <div className="bg-white rounded-xl shadow-lg p-8 relative overflow-hidden">
+          <div className="rounded-xl shadow-lg p-8 relative overflow-hidden" style={{ backgroundColor: '#eae3f2' }}>
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-32 h-32 opacity-5" 
                  style={{ backgroundColor: '#deb841' }}
@@ -562,7 +563,7 @@ const Portfolio = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skillGroup, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: '#eae3f2' }}>
                 <h3 className="text-xl font-bold mb-4" style={{ color: '#52874f' }}>{skillGroup.category}</h3>
                 <ul className="space-y-3">
                   {skillGroup.skills.map((skill, i) => (
@@ -585,7 +586,7 @@ const Portfolio = () => {
             <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#de9e36' }}></div>
           </div>
           
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="rounded-xl shadow-lg p-8" style={{ backgroundColor: '#eae3f2' }}>
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <div className="relative">
                 <img 
