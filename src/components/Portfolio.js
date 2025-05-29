@@ -387,10 +387,10 @@ const Portfolio = () => {
           <div className="text-center">
             {/* Main Header Content */}
             <div className="max-w-4xl mx-auto">
-              <div className="inline-block px-4 py-2 rounded-full text-sm font-medium mb-4" 
+              {/*<div className="inline-block px-4 py-2 rounded-full text-sm font-medium mb-4" 
                    style={{ backgroundColor: '#deb841', color: '#52874f' }}>
                 ✨ Available for New Opportunities
-              </div>
+              </div>*/}
               
               <h1 className="text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
                 Game Developer
