@@ -278,14 +278,14 @@ const Portfolio = () => {
                     <button 
                       onClick={prevImage}
                       className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-blue-700 transition-colors"
-                      style={{ backgroundColor: '#52874f' }}
+                      style={{ backgroundColor: '#eae3f2' }}
                     >
                       ←
                     </button>
                     <button 
                       onClick={nextImage}
                       className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-blue-700 transition-colors" //schimba daca trbee si aci si sus
-                      style={{ backgroundColor: '#52874f' }}
+                      style={{ backgroundColor: '#eae3f2' }}
                     >
                       →
                     </button>
@@ -314,7 +314,7 @@ const Portfolio = () => {
             <p className="mb-6 text-gray-600 leading-relaxed">{project.description}</p>
             
             <div className="mb-6">
-              <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>My Contributions</h4>
+              <h4 className="text-lg font-bold mb-3" style={{ color: '#eae3f2' }}>My Contributions</h4>
               <ul className="list-disc pl-6 space-y-2">
                 {project.contributions.map((contribution, index) => {
                   const [title, description] = contribution.split(': ');
@@ -328,7 +328,7 @@ const Portfolio = () => {
             </div>
             
             <div className="mb-6">
-              <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>Key Challenges Overcome</h4>
+              <h4 className="text-lg font-bold mb-3" style={{ color: '#eae3f2' }}>Key Challenges Overcome</h4>
               <ul className="list-disc pl-6 space-y-2">
                 {project.challenges.map((challenge, index) => {
                   const [title, description] = challenge.includes(': ') 
@@ -351,7 +351,7 @@ const Portfolio = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>Technologies Used</h4>
+              <h4 className="text-lg font-bold mb-3" style={{ color: '#eae3f2' }}>Technologies Used</h4>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, index) => (
                   <span 
@@ -373,7 +373,7 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#d5f76e' }}>
       {/* Modern Header with Geometric Design */}
-      <header className="relative overflow-hidden" style={{ background: `linear-gradient(135deg, #52874f 0%, #5053e4 100%)` }}>
+      <header className="relative overflow-hidden" style={{ background: `linear-gradient(135deg, #eae3f2 0%, #5053e4 100%)` }}>
         {/* Geometric Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-10 -right-10 w-40 h-40 opacity-20" style={{ backgroundColor: '#deb841' }}
@@ -388,7 +388,7 @@ const Portfolio = () => {
             {/* Main Header Content */}
             <div className="max-w-4xl mx-auto">
               <div className="inline-block px-4 py-2 rounded-full text-sm font-medium mb-4" 
-                   style={{ backgroundColor: '#deb841', color: '#52874f' }}>
+                   style={{ backgroundColor: '#deb841', color: '#eae3f2' }}>
                 ✨ Available for New Opportunities
               </div>
               
@@ -416,7 +416,7 @@ const Portfolio = () => {
                    style={{ color: 'white' }}
                    onMouseEnter={(e) => {
                      e.target.style.backgroundColor = 'white';
-                     e.target.style.color = '#52874f';
+                     e.target.style.color = '#eae3f2';
                    }}
                    onMouseLeave={(e) => {
                      e.target.style.backgroundColor = 'transparent';
@@ -455,7 +455,7 @@ const Portfolio = () => {
         {/* Projects Section */}
         <section id="projects" className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#52874f' }}>Featured Projects</h2>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#eae3f2' }}>Featured Projects</h2>
             <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#deb841' }}></div>
           </div>
           
@@ -472,7 +472,7 @@ const Portfolio = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#52874f' }}>{project.title}</h3>
+                  <h3 className="text-xl font-bold mb-2" style={{ color: '#eae3f2' }}>{project.title}</h3>
                   <p className="text-sm text-gray-600 italic mb-3">{project.subtitle}</p>
                   <p className="text-gray-700 mb-4 line-clamp-3">{project.description}</p>
                   
@@ -492,6 +492,7 @@ const Portfolio = () => {
         <section id="leadership" className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#52874f' }}>Leadership Experience!</h2>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#eae3f2' }}>Leadership Experience</h2>
             <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#de9e36' }}></div>
           </div>
           
@@ -504,7 +505,7 @@ const Portfolio = () => {
             <div className="relative">
               <div className="flex flex-col md:flex-row justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold" style={{ color: '#52874f' }}>{leadership.position}</h3>
+                  <h3 className="text-2xl font-bold" style={{ color: '#eae3f2' }}>{leadership.position}</h3>
                   <p className="text-xl" style={{ color: '#5053e4' }}>{leadership.company}</p>
                 </div>
               </div>
@@ -513,7 +514,7 @@ const Portfolio = () => {
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>Key Responsibilities</h4>
+                  <h4 className="text-lg font-bold mb-3" style={{ color: '#eae3f2' }}>Key Responsibilities</h4>
                   <ul className="space-y-2">
                     {leadership.responsibilities.map((responsibility, index) => {
                       const [title, description] = responsibility.split(': ');
@@ -532,7 +533,7 @@ const Portfolio = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>Significant Challenges Overcome</h4>
+                  <h4 className="text-lg font-bold mb-3" style={{ color: '#eae3f2' }}>Significant Challenges Overcome</h4>
                   <ul className="space-y-2">
                     {leadership.challenges.map((challenge, index) => {
                       const [title, description] = challenge.split(': ');
@@ -557,14 +558,14 @@ const Portfolio = () => {
          {/* Skills Section */}
         <section id="skills" className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#52874f' }}>Technical Skills</h2>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#eae3f2' }}>Technical Skills</h2>
             <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#5053e4' }}></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skillGroup, index) => (
               <div key={index} className="rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: '#eae3f2' }}>
-                <h3 className="text-xl font-bold mb-4" style={{ color: '#52874f' }}>{skillGroup.category}</h3>
+                <h3 className="text-xl font-bold mb-4" style={{ color: '#eae3f2' }}>{skillGroup.category}</h3>
                 <ul className="space-y-3">
                   {skillGroup.skills.map((skill, i) => (
                     <li key={i} className="flex items-center group">
@@ -582,7 +583,7 @@ const Portfolio = () => {
         {/* About Me Section */}
         <section id="about">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#52874f' }}>About Me</h2>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#eae3f2' }}>About Me</h2>
             <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#de9e36' }}></div>
           </div>
           
@@ -602,13 +603,13 @@ const Portfolio = () => {
               
               <div className="flex-1">
                 <p className="mb-4 text-gray-700 text-lg leading-relaxed">
-                  I'm a 4th year <strong style={{ color: '#52874f' }}>Creative Media and Game Technologies (CMGT)</strong> student at the Hanze University of Applied Sciences with a focus on game design, level design, and programming.
+                  I'm a 4th year <strong style={{ color: '#eae3f2' }}>Creative Media and Game Technologies (CMGT)</strong> student at the Hanze University of Applied Sciences with a focus on game design, level design, and programming.
                 </p>
                 <p className="mb-4 text-gray-700 text-lg leading-relaxed">
                   My background spans multiple game engines and development methodologies, with particular expertise in <strong style={{ color: '#5053e4' }}>Unity C# development, Godot GD script development</strong> and <strong style={{ color: '#de9e36' }}>Unreal Engine level design</strong>.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  I'm passionate about creating meaningful player experiences through immersive design and innovative technology integration. My portfolio demonstrates my ability to <strong style={{ color: '#deb841' }}>perform under pressure</strong>, <strong style={{ color: '#52874f' }}>overcome technical challenges</strong>, and <strong style={{ color: '#5053e4' }}>deliver high-quality projects</strong> under constraints.
+                  I'm passionate about creating meaningful player experiences through immersive design and innovative technology integration. My portfolio demonstrates my ability to <strong style={{ color: '#deb841' }}>perform under pressure</strong>, <strong style={{ color: '#eae3f2' }}>overcome technical challenges</strong>, and <strong style={{ color: '#5053e4' }}>deliver high-quality projects</strong> under constraints.
                 </p>
               </div>
             </div>
@@ -616,7 +617,7 @@ const Portfolio = () => {
         </section>
       </main>
       
-      <footer className="text-white py-12" style={{ backgroundColor: '#52874f' }}>
+      <footer className="text-white py-12" style={{ backgroundColor: '#eae3f2' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6">
             <h3 className="text-2xl font-bold mb-2">Let's Connect</h3>
@@ -626,14 +627,14 @@ const Portfolio = () => {
           <div className="flex justify-center space-x-6 mb-8">
             <a href="mailto:ivanovjucanmihai@gmail.com" 
                className="px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
-               style={{ backgroundColor: '#deb841', color: '#52874f' }}>
+               style={{ backgroundColor: '#deb841', color: '#eae3f2' }}>
               Get In Touch
             </a>
             <a href="#projects" 
                className="px-6 py-3 rounded-full font-semibold border-2 border-white text-white hover:bg-white transition-all duration-300"
                onMouseEnter={(e) => {
                  e.target.style.backgroundColor = 'white';
-                 e.target.style.color = '#52874f';
+                 e.target.style.color = '#eae3f2';
                }}
                onMouseLeave={(e) => {
                  e.target.style.backgroundColor = 'transparent';
