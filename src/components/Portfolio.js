@@ -187,7 +187,8 @@ const Portfolio = () => {
         "GDScript",
         "Blueprint Visual Scripting",
         "GameMaker Language",
-        "JavaScript and Python basics"
+        "JavaScript and Python basics",
+
       ]
     },
     {
@@ -400,11 +401,8 @@ const Portfolio = () => {
                 ✨ Available for New Opportunities
               </div>*/}
               
-              <h1 className="text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-                Game Developer
-                <span className="block text-3xl lg:text-4xl font-normal mt-2" style={{ color: '#d5f76e' }}>
-                  Portfolio
-                </span>
+              <h1 className="text-3xl lg:text-4xl font-normal text-white mb-4 leading-tight" style={{ color: '#d5f76e' }}>
+                Portfolio
               </h1>
               
               <p className="text-xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
