@@ -158,14 +158,14 @@ const Portfolio = () => {
     description: "Led a 4-person indie game studio through a critical development phase, delivering our vertical slice RPG Mead and Monsters.",
     responsibilities: [
       "Strategic Leadership: Established project scope, milestones, and production pipeline",
-      "Team Management: Coordinated specialized roles while maintaining cohesive vision",
-      "Resource Optimization: Delivered complex systems despite limited team size and timeline"
+      "Team Management: Coordinated specialized roles while maintaining cohesive vision amongst team members",
+      "Resource Optimization: Delivered complex, built from scratch systems despite limited team size and timeline"
     ],
     challenges: [
-      "Convincing stakeholders: Business plans and presentations in order to convince the university for us to intern in our own company",
-      "Production Bottlenecks: Implemented agile methodology to prioritize core features",
-      "Technical Limitations: New engine, new tools",
-      "Scope Management: Maintained feature quality while meeting the initial set deadline"
+      "Convincing stakeholders: Multi-stage Business, Marketing and Development plans in order to convince the university for us to intern in our own company",
+      "Production Bottlenecks: Implemented agile methodology to prioritize core features, learned a lot above scope-creep",
+      "Technical Limitations: New engine(Unreal), new tools(Blueprinting over C# development)",
+      "Scope Management: Maintained feature quality and adhered to the initial MoScoW list while also meeting the initial set deadline"
     ]
   };
 
