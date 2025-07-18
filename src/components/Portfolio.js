@@ -402,7 +402,7 @@ const Portfolio = () => {
                 ✨ Available for New Opportunities
               </div>*/}
               
-              <h1 className="text-3xl lg:text-4xl font-normal text-white mb-4 leading-tight" style={{ color: '#d5f76e' }}>
+              <h1 className="text-3xl lg:text-4xl font-normal text-white mb-4 leading-tight">
                 Portfolio
               </h1>
               
