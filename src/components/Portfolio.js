@@ -181,13 +181,21 @@ const Portfolio = () => {
       ]
     },
     {
-      category: "Programming",
+      category: "Programming - Good understanding",
       skills: [
         "C#",
         "GDScript",
         "Blueprint Visual Scripting",
         "GameMaker Language",
         "JavaScript and Python basics"
+      ]
+    },
+    {
+      category: "UNIX file system familiarity (Ubuntu + Arch)",
+      skills: [
+        "Basic sys-admin capabilities",
+        "Understanding of permission based security",
+        "Basic server and networking knowledge"
       ]
     },
     {
@@ -203,7 +211,7 @@ const Portfolio = () => {
       skills: [
         "LLM API Implementation",
         "AI-Assisted Development",
-        "Understanding of AI Tools and their possibilities"
+        "Understanding of AI Tools and their possibilities: Clickless internet, "
       ]
     },
     {
