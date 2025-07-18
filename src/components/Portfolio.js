@@ -389,7 +389,7 @@ const Portfolio = () => {
           <div className="absolute -top-10 -right-10 w-40 h-40 opacity-20" style={{ backgroundColor: '#d79921' }}
                transform="rotate(45deg)"></div>
           <div className="absolute top-20 -left-10 w-32 h-32 rounded-full opacity-15" style={{ backgroundColor: '#cc241d' }}></div>
-          <div className="absolute bottom-10 right-1/4 w-24 h-24 opacity-10" style={{ backgroundColor: '#8ec07c' }}
+          <div className="absolute bottom-10 right-1/4 w-24 h-24 opacity-10" style={{ backgroundColor: '#3c3836' }}
                transform="rotate(30deg)"></div>
         </div>
         
@@ -408,7 +408,7 @@ const Portfolio = () => {
               
               <p className="text-xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
                 Creative Media and Game Technologies Student specializing in 
-                <span className="font-semibold" style={{ color: '#d79921' }}> Game, Narrative</span> and 
+                <span className="font-semibold" style={{ color: '#cc241d' }}> Game, Narrative</span> and 
                 <span className="font-semibold" style={{ color: '#cc241d' }}> Level</span> design
               </p>
               
