@@ -260,7 +260,7 @@ const Portfolio = () => {
       <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4 overflow-y-auto">
         <div className="bg-white rounded-xl max-w-4xl w-full max-h-screen overflow-y-auto shadow-2xl">
           <div className="sticky top-0 bg-white p-6 border-b flex justify-between items-center rounded-t-xl">
-            <h2 className="text-2xl font-bold text-gray-800">{project.title}</h2>
+            <h2 className="text-2xl font-bold" style={{ color: '#3c3836' }}>{project.title}</h2>
             <button 
               onClick={() => setActiveProject(null)}
               className="p-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors duration-200"
@@ -273,7 +273,7 @@ const Portfolio = () => {
             {/* Project Image Gallery */}
             <div className="mb-8">
               <div className="relative">
-                <div className="relative h-80 rounded-xl overflow-hidden" style={{ backgroundColor: '#d5f76e' }}>
+                <div className="relative h-80 rounded-xl overflow-hidden" style={{ backgroundColor: '#ebdbb2' }}>
                   <img 
                     src={project.images[currentImageIndex]} 
                     alt={`${project.title} showcase ${currentImageIndex + 1}`} 
@@ -287,14 +287,14 @@ const Portfolio = () => {
                     <button 
                       onClick={prevImage}
                       className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-blue-700 transition-colors"
-                      style={{ backgroundColor: '#52874f' }}
+                      style={{ backgroundColor: '#458588' }}
                     >
                       ←
                     </button>
                     <button 
                       onClick={nextImage}
                       className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-70 text-white p-2 rounded-full hover:bg-blue-700 transition-colors" //schimba daca trbee si aci si sus
-                      style={{ backgroundColor: '#52874f' }}
+                      style={{ backgroundColor: '#458588' }}
                     >
                       →
                     </button>
@@ -312,6 +312,7 @@ const Portfolio = () => {
                       className={`w-3 h-3 rounded-full transition-all duration-200 ${
                         currentImageIndex === index ? 'scale-125 shadow-md' : 'hover:scale-110'
                       }`}
+                      style={{ backgroundColor: currentImageIndex === index ? '#458588' : '#d79921' }}
                       aria-label={`Go to image ${index + 1}`}
                     />
                   ))}
@@ -319,17 +320,17 @@ const Portfolio = () => {
               )}
             </div>
             
-            <h3 className="text-xl font-semibold mb-2 text-gray-800">{project.subtitle}</h3>
-            <p className="mb-6 text-gray-600 leading-relaxed">{project.description}</p>
+            <h3 className="text-xl font-semibold mb-2" style={{ color: '#3c3836' }}>{project.subtitle}</h3>
+            <p className="mb-6 leading-relaxed" style={{ color: '#3c3836' }}>{project.description}</p>
             
             <div className="mb-6">
-              <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>My Contributions</h4>
+              <h4 className="text-lg font-bold mb-3" style={{ color: '#458588' }}>My Contributions</h4>
               <ul className="list-disc pl-6 space-y-2">
                 {project.contributions.map((contribution, index) => {
                   const [title, description] = contribution.split(': ');
                   return (
-                    <li key={index} className="text-gray-600">
-                      <span className="font-bold text-gray-800">{title}:</span> {description}
+                    <li key={index} style={{ color: '#3c3836' }}>
+                      <span className="font-bold">{title}:</span> {description}
                     </li>
                   );
                 })}
@@ -337,7 +338,7 @@ const Portfolio = () => {
             </div>
             
             <div className="mb-6">
-              <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>Key Challenges Overcome</h4>
+              <h4 className="text-lg font-bold mb-3" style={{ color: '#458588' }}>Key Challenges Overcome</h4>
               <ul className="list-disc pl-6 space-y-2">
                 {project.challenges.map((challenge, index) => {
                   const [title, description] = challenge.includes(': ') 
@@ -345,10 +346,10 @@ const Portfolio = () => {
                     : [null, challenge];
                     
                   return (
-                    <li key={index} className="text-gray-600">
+                    <li key={index} style={{ color: '#3c3836' }}>
                       {title ? (
                         <>
-                          <span className="font-bold text-gray-800">{title}:</span> {description}
+                          <span className="font-bold">{title}:</span> {description}
                         </>
                       ) : (
                         challenge
@@ -360,13 +361,13 @@ const Portfolio = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>Technologies Used</h4>
+              <h4 className="text-lg font-bold mb-3" style={{ color: '#458588' }}>Technologies Used</h4>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech, index) => (
                   <span 
                     key={index} 
                     className="px-3 py-1 rounded-full text-sm font-medium text-white"
-                    style={{ backgroundColor: '#5053e4' }}
+                    style={{ backgroundColor: '#8ec07c' }}
                   >
                     {tech}
                   </span>
@@ -380,15 +381,15 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#f3e5c3' }}>
+    <div className="min-h-screen" style={{ backgroundColor: '#fbf1c7' }}>
       {/* Modern Header with Geometric Design */}
-      <header className="relative overflow-hidden" style={{ background: `linear-gradient(135deg, #52874f 0%, #5053e4 100%)` }}>
+      <header className="relative overflow-hidden" style={{ background: `linear-gradient(135deg, #458588 0%, #8ec07c 100%)` }}>
         {/* Geometric Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-10 -right-10 w-40 h-40 opacity-20" style={{ backgroundColor: '#deb841' }}
+          <div className="absolute -top-10 -right-10 w-40 h-40 opacity-20" style={{ backgroundColor: '#d79921' }}
                transform="rotate(45deg)"></div>
-          <div className="absolute top-20 -left-10 w-32 h-32 rounded-full opacity-15" style={{ backgroundColor: '#de9e36' }}></div>
-          <div className="absolute bottom-10 right-1/4 w-24 h-24 opacity-10" style={{ backgroundColor: '#d5f76e' }}
+          <div className="absolute top-20 -left-10 w-32 h-32 rounded-full opacity-15" style={{ backgroundColor: '#cc241d' }}></div>
+          <div className="absolute bottom-10 right-1/4 w-24 h-24 opacity-10" style={{ backgroundColor: '#8ec07c' }}
                transform="rotate(30deg)"></div>
         </div>
         
@@ -407,14 +408,14 @@ const Portfolio = () => {
               
               <p className="text-xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
                 Creative Media and Game Technologies Student specializing in 
-                <span className="font-semibold" style={{ color: '#deb841' }}> Game, Narrative</span> and 
-                <span className="font-semibold" style={{ color: '#de9e36' }}> Level</span> design
+                <span className="font-semibold" style={{ color: '#d79921' }}> Game, Narrative</span> and 
+                <span className="font-semibold" style={{ color: '#cc241d' }}> Level</span> design
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#projects" 
                    className="px-8 py-3 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                   style={{ backgroundColor: '#de9e36' }}>
+                   style={{ backgroundColor: '#d79921' }}>
                   View My Work
                 </a>
                 <a href="#about" 
@@ -422,7 +423,7 @@ const Portfolio = () => {
                    style={{ color: 'white' }}
                    onMouseEnter={(e) => {
                      e.target.style.backgroundColor = 'white';
-                     e.target.style.color = '#52874f';
+                     e.target.style.color = '#458588';
                    }}
                    onMouseLeave={(e) => {
                      e.target.style.backgroundColor = 'transparent';
@@ -461,8 +462,8 @@ const Portfolio = () => {
         {/* Projects Section */}
         <section id="projects" className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#52874f' }}>Featured Projects</h2>
-            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#deb841' }}></div>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#3c3836' }}>Featured Projects</h2>
+            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#d79921' }}></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -470,7 +471,7 @@ const Portfolio = () => {
               <div 
                 key={project.id} 
                 className="rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                style={{ backgroundColor: '#eae3f2' }}
+                style={{ backgroundColor: '#ebdbb2' }}
               >
                 <img 
                   src={project.thumbnail} 
@@ -478,14 +479,14 @@ const Portfolio = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#52874f' }}>{project.title}</h3>
-                  <p className="text-sm text-gray-600 italic mb-3">{project.subtitle}</p>
-                  <p className="text-gray-700 mb-4 line-clamp-3">{project.description}</p>
+                  <h3 className="text-xl font-bold mb-2" style={{ color: '#3c3836' }}>{project.title}</h3>
+                  <p className="text-sm italic mb-3" style={{ color: '#458588' }}>{project.subtitle}</p>
+                  <p className="mb-4 line-clamp-3" style={{ color: '#3c3836' }}>{project.description}</p>
                   
                   <button 
                     onClick={() => openProjectDetail(project)}
                     className="px-6 py-2 rounded-full text-white font-medium transition-all duration-200 hover:shadow-lg hover:scale-105"
-                    style={{ backgroundColor: '#5053e4' }}
+                    style={{ backgroundColor: '#458588' }}
                   >
                     View Details
                   </button>
@@ -497,39 +498,39 @@ const Portfolio = () => {
         
         <section id="leadership" className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#52874f' }}>Leadership Experience</h2>
-            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#de9e36' }}></div>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#3c3836' }}>Leadership Experience</h2>
+            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#cc241d' }}></div>
           </div>
           
-          <div className="rounded-xl shadow-lg p-8 relative overflow-hidden" style={{ backgroundColor: '#eae3f2' }}>
+          <div className="rounded-xl shadow-lg p-8 relative overflow-hidden" style={{ backgroundColor: '#ebdbb2' }}>
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-32 h-32 opacity-5" 
-                 style={{ backgroundColor: '#deb841' }}
+                 style={{ backgroundColor: '#d79921' }}
                  transform="rotate(45deg) translate(50%, -50%)"></div>
                  
             <div className="relative">
               <div className="flex flex-col md:flex-row justify-between mb-6">
                 <div>
-                  <h3 className="text-2xl font-bold" style={{ color: '#52874f' }}>{leadership.position}</h3>
-                  <p className="text-xl" style={{ color: '#5053e4' }}>{leadership.company}</p>
+                  <h3 className="text-2xl font-bold" style={{ color: '#3c3836' }}>{leadership.position}</h3>
+                  <p className="text-xl" style={{ color: '#458588' }}>{leadership.company}</p>
                 </div>
               </div>
               
-              <p className="mb-6 text-gray-700 leading-relaxed">{leadership.description}</p>
+              <p className="mb-6 leading-relaxed" style={{ color: '#3c3836' }}>{leadership.description}</p>
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>Key Responsibilities</h4>
+                  <h4 className="text-lg font-bold mb-3" style={{ color: '#3c3836' }}>Key Responsibilities</h4>
                   <ul className="space-y-2">
                     {leadership.responsibilities.map((responsibility, index) => {
                       const [title, description] = responsibility.split(': ');
                       return (
                         <li key={index} className="flex items-start">
                           <span className="mr-2 mt-1 w-2 h-2 rounded-full flex-shrink-0" 
-                                style={{ backgroundColor: '#deb841' }}></span>
+                                style={{ backgroundColor: '#d79921' }}></span>
                           <div>
-                            <span className="font-bold text-gray-800">{title}:</span>
-                            <span className="text-gray-600"> {description}</span>
+                            <span className="font-bold" style={{ color: '#3c3836' }}>{title}:</span>
+                            <span style={{ color: '#3c3836' }}> {description}</span>
                           </div>
                         </li>
                       );
@@ -538,17 +539,17 @@ const Portfolio = () => {
                 </div>
                 
                 <div>
-                  <h4 className="text-lg font-bold mb-3" style={{ color: '#52874f' }}>Significant Challenges Overcome</h4>
+                  <h4 className="text-lg font-bold mb-3" style={{ color: '#3c3836' }}>Significant Challenges Overcome</h4>
                   <ul className="space-y-2">
                     {leadership.challenges.map((challenge, index) => {
                       const [title, description] = challenge.split(': ');
                       return (
                         <li key={index} className="flex items-start">
                           <span className="mr-2 mt-1 w-2 h-2 rounded-full flex-shrink-0" 
-                                style={{ backgroundColor: '#de9e36' }}></span>
+                                style={{ backgroundColor: '#cc241d' }}></span>
                           <div>
-                            <span className="font-bold text-gray-800">{title}:</span>
-                            <span className="text-gray-600"> {description}</span>
+                            <span className="font-bold" style={{ color: '#3c3836' }}>{title}:</span>
+                            <span style={{ color: '#3c3836' }}> {description}</span>
                           </div>
                         </li>
                       );
@@ -564,18 +565,18 @@ const Portfolio = () => {
         <section id="skills" className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#52874f' }}>Technical Skills</h2>
-            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#5053e4' }}></div>
+            <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#458588' }}></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skills.map((skillGroup, index) => (
-              <div key={index} className="rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: '#eae3f2' }}>
-                <h3 className="text-xl font-bold mb-4" style={{ color: '#52874f' }}>{skillGroup.category}</h3>
+              <div key={index} className="rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300" style={{ backgroundColor: '#ebdbb2' }}>
+                <h3 className="text-xl font-bold mb-4" style={{ color: '#3c3836' }}>{skillGroup.category}</h3>
                 <ul className="space-y-3">
                   {skillGroup.skills.map((skill, i) => (
                     <li key={i} className="flex items-center group">
                       <span className="mr-3 w-2 h-2 rounded-full transition-all duration-200 group-hover:scale-150" 
-                            style={{ backgroundColor: '#deb841' }}></span>
+                            style={{ backgroundColor: '#d79921' }}></span>
                       <span className="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">{skill}</span>
                     </li>
                   ))}
@@ -588,11 +589,11 @@ const Portfolio = () => {
         {/* About Me Section */}
         <section id="about">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#52874f' }}>About Me</h2>
+            <h2 className="text-4xl font-bold mb-4" style={{ color: '#3c3836' }}>About Me</h2>
             <div className="w-24 h-1 mx-auto rounded-full" style={{ backgroundColor: '#de9e36' }}></div>
           </div>
           
-          <div className="rounded-xl shadow-lg p-8" style={{ backgroundColor: '#eae3f2' }}>
+          <div className="rounded-xl shadow-lg p-8" style={{ backgroundColor: '#ebdbb2' }}>
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
               <div className="relative">
                 <img 
@@ -601,20 +602,20 @@ const Portfolio = () => {
                   className="w-48 h-48 rounded-2xl object-cover shadow-lg"
                 />
                 <div className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full flex items-center justify-center text-2xl shadow-lg"
-                     style={{ backgroundColor: '#deb841' }}>
+                     style={{ backgroundColor: '#d79921' }}>
                   🚀
                 </div>
               </div>
               
               <div className="flex-1">
                 <p className="mb-4 text-gray-700 text-lg leading-relaxed">
-                  I'm a 4th year <strong style={{ color: '#52874f' }}>Creative Media and Game Technologies (CMGT)</strong> student at the Hanze University of Applied Sciences with a focus on game design, level design, narrative design and enough programming to showcase my ideas.
+                  I'm a 4th year <strong style={{ color: '#3c3836' }}>Creative Media and Game Technologies (CMGT)</strong> student at the Hanze University of Applied Sciences with a focus on game design, level design, narrative design and enough programming to showcase my ideas.
                 </p>
                 <p className="mb-4 text-gray-700 text-lg leading-relaxed">
-                  My background spans multiple game engines and development methodologies, with particular expertise in <strong style={{ color: '#5053e4' }}>Unity C# development, Godot development</strong> and <strong style={{ color: '#de9e36' }}>Unreal Engine level design and Blueprinting</strong>.
+                  My background spans multiple game engines and development methodologies, with particular expertise in <strong style={{ color: '#458588' }}>Unity C# development, Godot development</strong> and <strong style={{ color: '#de9e36' }}>Unreal Engine level design and Blueprinting</strong>.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  I'm passionate about creating meaningful player experiences with unique narratives and immersive level design. My portfolio demonstrates my ability to <strong style={{ color: '#deb841' }}>perform under pressure</strong>, <strong style={{ color: '#52874f' }}>overcome technical challenges</strong>, and <strong style={{ color: '#5053e4' }}>deliver both small and bigger sized projects</strong> under constraints.
+                  I'm passionate about creating meaningful player experiences with unique narratives and immersive level design. My portfolio demonstrates my ability to <strong style={{ color: '#d79921' }}>perform under pressure</strong>, <strong style={{ color: '#458588' }}>overcome technical challenges</strong>, and <strong style={{ color: '#8ec07c' }}>deliver both small and bigger sized projects</strong> under constraints.
                 </p>
               </div>
             </div>
@@ -622,7 +623,7 @@ const Portfolio = () => {
         </section>
       </main>
       
-      <footer className="text-white py-12" style={{ backgroundColor: '#52874f' }}>
+      <footer className="text-white py-12" style={{ backgroundColor: '#3c3836' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-6">
             <h3 className="text-2xl font-bold mb-2">Let's Connect</h3>
@@ -632,14 +633,14 @@ const Portfolio = () => {
           <div className="flex justify-center space-x-6 mb-8">
             <a href="mailto:ivanovjucanmihai@gmail.com" 
                className="px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
-               style={{ backgroundColor: '#deb841', color: '#52874f' }}>
+               style={{ backgroundColor: '#d79921', color: '#3c3836' }}>
               Get In Touch
             </a>
             <a href="#projects" 
                className="px-6 py-3 rounded-full font-semibold border-2 border-white text-white hover:bg-white transition-all duration-300"
                onMouseEnter={(e) => {
                  e.target.style.backgroundColor = 'white';
-                 e.target.style.color = '#52874f';
+                 e.target.style.color = '#3c3836';
                }}
                onMouseLeave={(e) => {
                  e.target.style.backgroundColor = 'transparent';
