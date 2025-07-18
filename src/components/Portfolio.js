@@ -407,8 +407,8 @@ const Portfolio = () => {
               
               <p className="text-xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
                 Creative Media and Game Technologies Student specializing in 
-                <span className="font-semibold" style={{ color: '#deb841' }}> Unity C#</span> and 
-                <span className="font-semibold" style={{ color: '#de9e36' }}> Unreal Engine</span> development
+                <span className="font-semibold" style={{ color: '#deb841' }}> Game, Narrative</span> and 
+                <span className="font-semibold" style={{ color: '#de9e36' }}> Level</span> design
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
