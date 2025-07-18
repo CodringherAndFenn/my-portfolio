@@ -608,13 +608,13 @@ const Portfolio = () => {
               
               <div className="flex-1">
                 <p className="mb-4 text-gray-700 text-lg leading-relaxed">
-                  I'm a 4th year <strong style={{ color: '#52874f' }}>Creative Media and Game Technologies (CMGT)</strong> student at the Hanze University of Applied Sciences with a focus on game design, level design, and programming.
+                  I'm a 4th year <strong style={{ color: '#52874f' }}>Creative Media and Game Technologies (CMGT)</strong> student at the Hanze University of Applied Sciences with a focus on game design, level design, narrative design and enough programming to showcase my ideas.
                 </p>
                 <p className="mb-4 text-gray-700 text-lg leading-relaxed">
-                  My background spans multiple game engines and development methodologies, with particular expertise in <strong style={{ color: '#5053e4' }}>Unity C# development, Godot GD script development</strong> and <strong style={{ color: '#de9e36' }}>Unreal Engine level design</strong>.
+                  My background spans multiple game engines and development methodologies, with particular expertise in <strong style={{ color: '#5053e4' }}>Unity C# development, Godot development</strong> and <strong style={{ color: '#de9e36' }}>Unreal Engine level design and Blueprinting</strong>.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  I'm passionate about creating meaningful player experiences through immersive design and innovative technology integration. My portfolio demonstrates my ability to <strong style={{ color: '#deb841' }}>perform under pressure</strong>, <strong style={{ color: '#52874f' }}>overcome technical challenges</strong>, and <strong style={{ color: '#5053e4' }}>deliver high-quality projects</strong> under constraints.
+                  I'm passionate about creating meaningful player experiences with unique narratives and immersive level design. My portfolio demonstrates my ability to <strong style={{ color: '#deb841' }}>perform under pressure</strong>, <strong style={{ color: '#52874f' }}>overcome technical challenges</strong>, and <strong style={{ color: '#5053e4' }}>deliver both small and bigger sized projects</strong> under constraints.
                 </p>
               </div>
             </div>
@@ -650,7 +650,7 @@ const Portfolio = () => {
           </div>
           
           <div className="border-t border-white border-opacity-20 pt-6">
-            <p className="opacity-75">© 2025 Game Developer Portfolio - Crafted with passion</p>
+            <p className="opacity-75">© 2025 Game Developer Portfolio</p>
           </div>
         </div>
       </footer>
