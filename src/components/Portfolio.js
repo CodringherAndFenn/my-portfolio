@@ -422,19 +422,19 @@ const Portfolio = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#projects" 
                    className="px-8 py-3 font-semibold transition-all duration-300 hover:opacity-90"
-                   style={{ backgroundColor: '#3c3836', color: '#fbf1c7' }}>
+                   style={{ backgroundColor: '#d79921', color: '#fbf1c7' }}>
                   View My Work
                 </a>
                 <a href="#about" 
                    className="px-8 py-3 font-semibold border-2 transition-all duration-300"
-                   style={{ borderColor: '#3c3836', color: '#3c3836' }}
+                   style={{ borderColor: '#ffffff', color: '#ffffff' }}
                    onMouseEnter={(e) => {
-                     e.target.style.backgroundColor = '#3c3836';
+                     e.target.style.backgroundColor = '#fbf1c7';
                      e.target.style.color = '#fbf1c7';
                    }}
                    onMouseLeave={(e) => {
                      e.target.style.backgroundColor = 'transparent';
-                     e.target.style.color = '#3c3836';
+                     e.target.style.color = '#ffffff';
                    }}>
                   Learn About Me
                 </a>
