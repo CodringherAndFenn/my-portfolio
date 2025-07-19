@@ -383,10 +383,10 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#fbf1c7' }}>
       {/* Modern Header with Geometric Design */}
-      <header className="relative" style={{ backgroundColor: '#ffffff' }}>
+      <header className="relative" style={{ backgroundColor: '#3c3836' }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Navigation Bar */}
-          <nav className="flex justify-between items-center py-6 border-b" style={{ borderColor: '#e5e5e5' }}>
+          <nav className="flex justify-between items-center py-3 border-b" style={{ borderColor: '#fbf1c7' }}>
             <div className="flex items-center">
               <h2 className="text-2xl font-bold" style={{ color: '#3c3836' }}>Portfolio</h2>
             </div>
@@ -422,7 +422,7 @@ const Portfolio = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#projects" 
                    className="px-8 py-3 font-semibold transition-all duration-300 hover:opacity-90"
-                   style={{ backgroundColor: '#3c3836', color: '#ffffff' }}>
+                   style={{ backgroundColor: '#3c3836', color: '#fbf1c7' }}>
                   View My Work
                 </a>
                 <a href="#about" 
@@ -430,7 +430,7 @@ const Portfolio = () => {
                    style={{ borderColor: '#3c3836', color: '#3c3836' }}
                    onMouseEnter={(e) => {
                      e.target.style.backgroundColor = '#3c3836';
-                     e.target.style.color = '#ffffff';
+                     e.target.style.color = '#fbf1c7';
                    }}
                    onMouseLeave={(e) => {
                      e.target.style.backgroundColor = 'transparent';
