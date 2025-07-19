@@ -388,7 +388,7 @@ const Portfolio = () => {
           {/* Navigation Bar */}
           <nav className="flex justify-between items-center py-3 border-b" style={{ borderColor: '#fbf1c7' }}>
             <div className="flex items-center">
-              <h2 className="text-2xl font-bold" style={{ color: '#3c3836' }}>Portfolio</h2>
+              <h2 className="text-2xl font-bold" style={{ color: '#d79921' }}>Portfolio</h2>
             </div>
             <ul className="hidden md:flex space-x-8">
               {[
@@ -400,7 +400,7 @@ const Portfolio = () => {
                 <li key={index}>
                   <a href={item.href} 
                      className="font-medium transition-all duration-200 hover:text-opacity-70"
-                     style={{ color: '#3c3836' }}>
+                     style={{ color: '#d79921' }}>
                     {item.label}
                   </a>
                 </li>
@@ -409,7 +409,7 @@ const Portfolio = () => {
           </nav>
           
           {/* Main Header Content */}
-          <div className="py-8 text-center">
+          <div className="py-6 text-center">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight" style={{color: '#ffffff'}}>
                 Game Developer & Designer
