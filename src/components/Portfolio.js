@@ -409,7 +409,7 @@ const Portfolio = () => {
           </nav>
           
           {/* Main Header Content */}
-          <div className="py-6 text-center">
+          <div className="py-4 text-center">
             <div className="max-w-3xl mx-auto">
               <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight" style={{color: '#ffffff'}}>
                 Game Developer & Designer
@@ -421,12 +421,12 @@ const Portfolio = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#projects" 
-                   className="px-8 py-3 font-semibold transition-all duration-300 hover:opacity-90"
+                   className="px-6 py-2 font-semibold transition-all duration-300 hover:opacity-90"
                    style={{ backgroundColor: '#d79921', color: '#fbf1c7' }}>
                   View My Work
                 </a>
                 <a href="#about" 
-                   className="px-8 py-3 font-semibold border-2 transition-all duration-300"
+                   className="px-6 py-2 font-semibold border-2 transition-all duration-300"
                    style={{ borderColor: '#ffffff', color: '#ffffff' }}
                    onMouseEnter={(e) => {
                      e.target.style.backgroundColor = '#fbf1c7';
