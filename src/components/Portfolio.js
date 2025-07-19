@@ -409,13 +409,13 @@ const Portfolio = () => {
           </nav>
           
           {/* Main Header Content */}
-          <div className="py-16 text-center">
+          <div className="py-8 text-center">
             <div className="max-w-3xl mx-auto">
-              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight" style={{color: '#3c3836'}}>
+              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight" style={{color: '#ffffff'}}>
                 Game Developer & Designer
               </h1>
               
-              <p className="text-xl mb-10 max-w-2xl mx-auto leading-relaxed" style={{ color: '#666666' }}>
+              <p className="text-xl mb-10 max-w-2xl mx-auto leading-relaxed" style={{ color: '#ffffff' }}>
                 Creative Media and Game Technologies Student specializing in Game, Narrative, and Level Design
               </p>
               
