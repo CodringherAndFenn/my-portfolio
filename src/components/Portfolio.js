@@ -383,63 +383,14 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#fbf1c7' }}>
       {/* Modern Header with Geometric Design */}
-      <header className="relative overflow-hidden" style={{ background: `linear-gradient(135deg, #458588 0%, #8ec07c 100%)` }}>
-        {/* Geometric Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-10 -right-10 w-40 h-40 opacity-20" style={{ backgroundColor: '#d79921' }}
-               transform="rotate(45deg)"></div>
-          <div className="absolute top-20 -left-10 w-32 h-32 rounded-full opacity-15" style={{ backgroundColor: '#cc241d' }}></div>
-          <div className="absolute bottom-10 right-1/4 w-24 h-24 opacity-10" style={{ backgroundColor: '#3c3836' }}
-               transform="rotate(30deg)"></div>
-        </div>
-        
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center">
-            {/* Main Header Content */}
-            <div className="max-w-4xl mx-auto">
-              {/*<div className="inline-block px-4 py-2 rounded-full text-sm font-medium mb-4" 
-                   style={{ backgroundColor: '#deb841', color: '#52874f' }}>
-                ✨ Available for New Opportunities
-              </div>*/}
-              
-              <h1 className="text-3xl lg:text-4xl font-bold mb-4 leading-tight" style={{color: '#3c3836'}}>
-                Portfolio
-              </h1>
-              
-              <p className="text-xl text-white opacity-90 mb-8 max-w-2xl mx-auto">
-                Creative Media and Game Technologies Student specializing in 
-                <span className="font-semibold" style={{ color: '#cc241d' }}> Game, Narrative</span> and 
-                <span className="font-semibold" style={{ color: '#cc241d' }}> Level</span> design
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#projects" 
-                   className="px-8 py-3 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg"
-                   style={{ backgroundColor: '#d79921' }}>
-                  View My Work
-                </a>
-                <a href="#about" 
-                   className="px-8 py-3 rounded-full font-semibold border-2 border-white text-white hover:bg-white transition-all duration-300"
-                   style={{ color: 'white' }}
-                   onMouseEnter={(e) => {
-                     e.target.style.backgroundColor = 'white';
-                     e.target.style.color = '#458588';
-                   }}
-                   onMouseLeave={(e) => {
-                     e.target.style.backgroundColor = 'transparent';
-                     e.target.style.color = 'white';
-                   }}>
-                  Learn About Me
-                </a>
-              </div>
+      <header className="relative" style={{ backgroundColor: '#ffffff' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Navigation Bar */}
+          <nav className="flex justify-between items-center py-6 border-b" style={{ borderColor: '#e5e5e5' }}>
+            <div className="flex items-center">
+              <h2 className="text-2xl font-bold" style={{ color: '#3c3836' }}>Portfolio</h2>
             </div>
-          </div>
-        </div>
-        
-        {/* Modern Navigation */}
-        <nav className="relative border-t border-white border-opacity-20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <ul className="flex flex-wrap justify-center lg:justify-start space-x-8 py-4">
+            <ul className="hidden md:flex space-x-8">
               {[
                 { href: "#projects", label: "Projects" },
                 { href: "#leadership", label: "Leadership" },
@@ -448,14 +399,49 @@ const Portfolio = () => {
               ].map((item, index) => (
                 <li key={index}>
                   <a href={item.href} 
-                     className="text-white hover:text-opacity-80 font-medium transition-all duration-200 py-2 border-b-2 border-transparent hover:border-white hover:border-opacity-50">
+                     className="font-medium transition-all duration-200 hover:text-opacity-70"
+                     style={{ color: '#3c3836' }}>
                     {item.label}
                   </a>
                 </li>
               ))}
             </ul>
+          </nav>
+          
+          {/* Main Header Content */}
+          <div className="py-16 text-center">
+            <div className="max-w-3xl mx-auto">
+              <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight" style={{color: '#3c3836'}}>
+                Game Developer & Designer
+              </h1>
+              
+              <p className="text-xl mb-10 max-w-2xl mx-auto leading-relaxed" style={{ color: '#666666' }}>
+                Creative Media and Game Technologies Student specializing in Game, Narrative, and Level Design
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" 
+                   className="px-8 py-3 font-semibold transition-all duration-300 hover:opacity-90"
+                   style={{ backgroundColor: '#3c3836', color: '#ffffff' }}>
+                  View My Work
+                </a>
+                <a href="#about" 
+                   className="px-8 py-3 font-semibold border-2 transition-all duration-300"
+                   style={{ borderColor: '#3c3836', color: '#3c3836' }}
+                   onMouseEnter={(e) => {
+                     e.target.style.backgroundColor = '#3c3836';
+                     e.target.style.color = '#ffffff';
+                   }}
+                   onMouseLeave={(e) => {
+                     e.target.style.backgroundColor = 'transparent';
+                     e.target.style.color = '#3c3836';
+                   }}>
+                  Learn About Me
+                </a>
+              </div>
+            </div>
           </div>
-        </nav>
+        </div>
       </header>
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
