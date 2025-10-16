@@ -15,10 +15,10 @@ const Portfolio = () => {
         "Game & Level Design: Created the narrative structure and environmental storytelling",
         "Custom Tool Development: Built an automated landscaping system with performance-optimized stylized grass",
         "Combat System: Designed the combat system then implemented by the programmer",
-        "Diegetic Health System: Designed immersive health visualization that enhances player feedback"
+        "Diegetic Health System: Designed a diagetic health system inspired by Dead Space"
       ],
       challenges: [
-        "Balanced visual fidelity with performance optimization in UE5, a new engine for us at the time",
+        "Producing everything in UE5, a new engine for us at the time",
         "Stood out with the diagetic system",
         "Integrated complex companion AI pathfinding",
         "Managed scope to deliver a complete vertical slice within the 4-month timeline"
@@ -43,11 +43,11 @@ const Portfolio = () => {
       contributions: [
         "Full Development Leadership: Managed all aspects from concept to implementation",
         "Visual Design: Created all art assets and environments to support the narrative theme",
-        "Systems Implementation: Built mechanics that translate abstract emotions into gameplay"
+        "Systems Implementation: Built mechanics that translate the complicated emotions a new expat student can go through, into gameplay"
       ],
       challenges: [
         "Learned GameMaker's language and environment while simultaneously developing the game",
-        "Transformed complex emotional concepts (anxiety) into tangible gameplay mechanics",
+        "2D pixel art creation from scratch",
         "Completed comprehensive development with minimal team support (two-person project)"
       ],
       thumbnail: "https://i.postimg.cc/mrvD4BS8/ezgif-frame-005.png",
@@ -63,17 +63,16 @@ const Portfolio = () => {
     {
       id: 3,
       title: "Wizard Hat with a Cat",
-      subtitle: "A competitive spell-casting PvP game developed during an intensive month-long development sprint",
+      subtitle: "A competitive spell-casting PvP game developed during an intensive 3 week long development challenge",
       description: "This project demonstrates my team's rapid prototyping capabilities, evolving through three distinct design iterations before arriving at the final combat-focused experience.",
       contributions: [
         "Lead Designer: Guided the project through multiple iterations based on playtesting feedback",
-        "Character Controller Programming: Built responsive movement and spell-casting systems",
-        "Combat Design: Balanced spell interactions for meaningful tactical choices"
+        "Character Controller Programming: Built two responsive movement and spell-casting systems",
+        "Combat Design: Balancing the PvP aspect of the game through extensive testing"
       ],
       challenges: [
-        "Maintained development momentum while pivoting design direction twice",
-        "Implemented complex spell interactions with limited technical resources",
-        "Delivered a playable, balanced PvP experience within a one-month timeframe"
+        "Maintained development momentum while pivoting our design direction twice",
+        "Delivered a playable, balanced PvP experience within a three week timeframe"
       ],
       thumbnail: "https://i.postimg.cc/8sQ9kXY8/cat.png",
       images: [
@@ -88,14 +87,12 @@ const Portfolio = () => {
       subtitle: "A Unity roguelike shooter developed alongside a custom AI development assistant",
       description: "This entrepreneurship elective project explored how AI tools can dramatically accelerate game development workflows.",
       contributions: [
-        "AI Integration: Implemented LLM API for code analysis and suggestion",
-        "Rapid Development: Completed a full roguelike prototype in just 3 days",
-        "Workflow Optimization: Designed processes for effective human-AI collaboration"
+        "AI Integration: Implemented LLM API for code analysis and suggestionas a CLI tool",
+        "Rapid Development: Completed a full roguelike prototype in just 3 days that included environment, enemy behavior, shooting and movement mechanics, etc."
       ],
       challenges: [
-        "Created effective prompt engineering patterns for code assistance",
         "Balanced AI suggestions with critical implementation decisions",
-        "Demonstrated 80% development time reduction compared to traditional methods"
+        "Demonstrated 80% development time reduction compared to traditional methods, as long as the developer is already knowledgeable about the subject matter"
       ],
       thumbnail: "https://i.postimg.cc/Y0KBjS4y/codev.png",
       images: [
@@ -106,27 +103,24 @@ const Portfolio = () => {
     },
     {
     id: 5,
-      title: "Dorifto Delivery",
-      subtitle: "Business has been going down, we have to stand out! Drift and Deliver, that's how!",
-      description: "An arcade-style delivery game where drifting is how your business succeeds",
+      title: "Nothing To Hide",
+      subtitle: "If you are innocent, then you have nothing to hide, right?",
+      description: "A narrative driven, CLI based game developed under a 2 week timeline in our Rapid Prototyping elective. Game is written 100% in python and is made around the theme of 'nothng'.",
       contributions: [
-        "Vehicle Physics Programming: Developed responsive drift mechanics with realistic handling",
-        "Game Design: Created progression system linking drift performance to delivery efficiency",
-        "Level Design: Built dynamic delivery routes that reward skillful drifting",
-        "UI/UX Implementation: Designed intuitive controls and feedback systems for drift scoring dot dithering"
+        "Programming, Narrative Design, UX/UI and everything else: me"
       ],
       challenges: [
-        "Physics Balance: Balanced realistic physics with arcade-style accessibility for broad appeal",
-        "Performance Optimization: Optimized complex vehicle calculations while maintaining smooth 60fps performance",
-        "Game Design: Designed challenging but achievable delivery objectives that encourage mastery"
+        "OS compatibility: packaged the game to work on MacOS, Windows and Linux",
+        "Thematic compatibility: Incorporated the theme 'nothing' in a gamified manner under tight time constraints",
+        "Full game loop: Main challenge and focus of this project and elective is to deliver full game loops in a 2 week timeline."
       ],
-      thumbnail: "https://i.postimg.cc/FzmC2kkm/ae86.jpg",
+      thumbnail: "https://i.postimg.cc/x8Cn4hNk/Screenshot-from-2025-10-16-09-59-02.png",
       images: [
-        "https://placehold.co/800x450?text=AI+Workflow+Demo",
-        "https://placehold.co/800x450?text=Procedural+Generation",
-        "https://placehold.co/800x450?text=Roguelike+Elements+Gif"
+        "https://i.postimg.cc/CxypGz7g/Screenshot-from-2025-10-16-09-59-41.png",
+        "https://i.postimg.cc/k4Hp7phM/Screenshot-from-2025-10-16-09-59-56.png",
+        "https://i.postimg.cc/FKC4JGB1/Screenshot-from-2025-10-16-10-10-53.png"
       ],
-      technologies: ["Unity", "C#", "Physics Simulation", "Mobile Optimization"]
+      technologies: ["Python", "CLI based", "Narrative puzzle design", "OS compatibility"]
     },
     {
       id: 6,
@@ -140,7 +134,7 @@ const Portfolio = () => {
       challenges: [
         "Worked within strict security and privacy requirements",
         "Optimized performance for VR hardware constraints",
-        "Collaborated with subject matter experts to ensure training effectiveness"
+        "Collaborated with subject matter experts to ensure training effectiveness (police officers)"
       ],
       thumbnail: "https://i.postimg.cc/sx9qX4Cv/police.png",
       images: [
@@ -192,7 +186,7 @@ const Portfolio = () => {
       ]
     },
     {
-      category: "UNIX file system familiarity (Ubuntu + Arch)",
+      category: "UNIX file system familiarity",
       skills: [
         "Basic sys-admin capabilities",
         "Understanding of permission based security",
