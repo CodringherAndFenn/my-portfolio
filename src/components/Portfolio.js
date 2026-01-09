@@ -103,22 +103,24 @@ const Portfolio = () => {
     },
     {
     id: 5,
-      title: "Nothing To Hide",
+      title: "Nothing's U.P",
       subtitle: "If you are innocent, then you have nothing to hide, right?",
-      description: "A narrative driven, CLI based game developed under a 2 week timeline in our Rapid Prototyping elective. Game is written 100% in python and is made around the theme of 'nothng'.",
+      description: "A narrative driven, CLI based game developed under a 2 week timeline in our Rapid Prototyping elective. Game is written 100% in python and is made around the theme of 'nothng' and 'whats up'. It has a total of 5 endings, 2 of them being secret, depending on your choices.",
       contributions: [
         "Programming, Narrative Design, UX/UI and everything else: me"
       ],
       challenges: [
         "OS compatibility: packaged the game to work on MacOS, Windows and Linux",
-        "Thematic compatibility: Incorporated the theme 'nothing' in a gamified manner under tight time constraints",
+        "Thematic compatibility: Incorporated the theme 'nothing' and 'whats up' in a gamified manner under tight time constraints",
         "Full game loop: Main challenge and focus of this project and elective is to deliver full game loops in a 2 week timeline."
       ],
-      thumbnail: "https://i.postimg.cc/x8Cn4hNk/Screenshot-from-2025-10-16-09-59-02.png",
+      thumbnail: "https://i.postimg.cc/d07cB5Z4/menu.png",
       images: [
-        "https://i.postimg.cc/CxypGz7g/Screenshot-from-2025-10-16-09-59-41.png",
-        "https://i.postimg.cc/k4Hp7phM/Screenshot-from-2025-10-16-09-59-56.png",
-        "https://i.postimg.cc/FKC4JGB1/Screenshot-from-2025-10-16-10-10-53.png"
+        "https://i.postimg.cc/d07cB5Z4/menu.png",
+        "https://i.postimg.cc/Qdt28fmd/rulebook.png",
+        "https://i.postimg.cc/prCSxjny/day1.png",
+        "https://i.postimg.cc/9Mjg7bdW/judgement.png",
+        "https://i.postimg.cc/3r1fkgdT/shift1complete.png"
       ],
       technologies: ["Python", "CLI based", "Narrative puzzle design", "OS compatibility"]
     },
