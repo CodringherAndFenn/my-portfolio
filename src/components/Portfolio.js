@@ -23,15 +23,15 @@ const Portfolio = () => {
         "Integrated complex companion AI pathfinding",
         "Managed scope to deliver a complete vertical slice within the 4-month timeline"
       ],
-      thumbnail: "https://i.postimg.cc/hvYrgmMC/Highres-Screenshot-2024-04-12-15-06-49.png",
+      thumbnail: `${process.env.PUBLIC_URL}/images/Highres-Screenshot-2024-04-12-15-06-49.png`,
       images: [
-        "https://i.postimg.cc/W3HMnC9H/riding-7-15-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/wMxwj8qs/villagefight-2-9-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/QxyfhyRH/bossfight-2-14-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/pdtYdbkX/diagetic-3-11-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/gkC3MFCq/terraintool-2-15-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/W4JKBvzN/villagewalk-3-11-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/9MQ94W9V/riding2-6-18-ezgif-com-video-to-gif-converter.gif"
+        `${process.env.PUBLIC_URL}/images/riding-7-15-ezgif-com-video-to-gif-converter.gif`,
+        `${process.env.PUBLIC_URL}/images/villagefight-2-9-ezgif-com-video-to-gif-converter.gif`,
+        `${process.env.PUBLIC_URL}/images/bossfight-2-14-ezgif-com-video-to-gif-converter.gif`,
+        `${process.env.PUBLIC_URL}/images/diagetic-3-11-ezgif-com-video-to-gif-converter.gif`,
+        `${process.env.PUBLIC_URL}/images/terraintool-2-15-ezgif-com-video-to-gif-converter.gif`,
+        `${process.env.PUBLIC_URL}/images/villagewalk-3-11-ezgif-com-video-to-gif-converter.gif`,
+        `${process.env.PUBLIC_URL}/images/riding2-6-18-ezgif-com-video-to-gif-converter.gif`,
       ],
       technologies: ["UE 5.4", "Blueprinting", "Blender", "SpeedTree", "Substance Painter"]
     },
@@ -50,11 +50,11 @@ const Portfolio = () => {
         "2D pixel art creation from scratch",
         "Completed comprehensive development with minimal team support (two-person project)"
       ],
-      thumbnail: "https://i.postimg.cc/mrvD4BS8/ezgif-frame-005.png",
+      thumbnail: `${process.env.PUBLIC_URL}/images/ezgif-frame-005.png`,
       images: [
-        "https://i.postimg.cc/QMy7W2JT/introlevel-all-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/CLcx1jNZ/introlevel-fighting-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/9fjKHk7y/level2-ezgif-com-video-to-gif-converter.gif",
+        `${process.env.PUBLIC_URL}/images/introlevel-all-ezgif-com-video-to-gif-converter.gif`,
+        `${process.env.PUBLIC_URL}/images/introlevel-fighting-ezgif-com-video-to-gif-converter.gif`,
+        `${process.env.PUBLIC_URL}/images/level2-ezgif-com-video-to-gif-converter.gif`,
         "https://i.postimg.cc/Jz3KZzsB/stationlevel-ezgif-com-video-to-gif-converter.gif",
         "https://i.postimg.cc/R0XRppQS/lastlevels-ezgif-com-video-to-gif-converter.gif",
       ],
@@ -74,10 +74,10 @@ const Portfolio = () => {
         "Maintained development momentum while pivoting our design direction twice",
         "Delivered a playable, balanced PvP experience within a three week timeframe"
       ],
-      thumbnail: "https://i.postimg.cc/8sQ9kXY8/cat.png",
+      thumbnail: `${process.env.PUBLIC_URL}/images/cat.png`,
       images: [
-        "https://i.postimg.cc/gJjfgZh7/wizardcat1-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/L5ZGpFNB/wizardcat2-ezgif-com-video-to-gif-converter.gif"
+        `${process.env.PUBLIC_URL}/images/wizardcat1-ezgif-com-video-to-gif-converter.gif`,
+        `${process.env.PUBLIC_URL}/images/wizardcat2-ezgif-com-video-to-gif-converter.gif`,
       ],
       technologies: ["Unity", "C#", "Co-op"]
     },
@@ -94,10 +94,10 @@ const Portfolio = () => {
         "Balanced AI suggestions with critical implementation decisions",
         "Demonstrated 80% development time reduction compared to traditional methods, as long as the developer is already knowledgeable about the subject matter"
       ],
-      thumbnail: "https://i.postimg.cc/Y0KBjS4y/codev.png",
+      thumbnail: `${process.env.PUBLIC_URL}/images/codev.png`,
       images: [
         "https://i.postimg.cc/v8JZ6YFy/codev-cropped-3-20-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/CLCSBbsC/unityfpshooter-2-13-ezgif-com-video-to-gif-converter.gif"
+        "https://i.postimg.cc/CLCSBbsC/unityfpshooter-2-13-ezgif-com-video-to-gif-converter.gif",
       ],
       technologies: ["Unity", "C#", "LLM CLAUDE API", "AI Workflows"]
     },
@@ -114,13 +114,13 @@ const Portfolio = () => {
         "Thematic compatibility: Incorporated the theme 'nothing' and 'whats up' in a gamified manner under tight time constraints",
         "Full game loop: Main challenge and focus of this project and elective is to deliver full game loops in a 2 week timeline."
       ],
-      thumbnail: "https://i.postimg.cc/d07cB5Z4/menu.png",
+      thumbnail: `${process.env.PUBLIC_URL}/images/menu.png`,
       images: [
-        "https://i.postimg.cc/d07cB5Z4/menu.png",
-        "https://i.postimg.cc/Qdt28fmd/rulebook.png",
-        "https://i.postimg.cc/prCSxjny/day1.png",
-        "https://i.postimg.cc/9Mjg7bdW/judgement.png",
-        "https://i.postimg.cc/3r1fkgdT/shift1complete.png"
+        `${process.env.PUBLIC_URL}/images/menu.png`,
+        `${process.env.PUBLIC_URL}/images/rulebook.png`,
+        `${process.env.PUBLIC_URL}/images/day1.png`,
+        `${process.env.PUBLIC_URL}/images/judgement.png`,
+        `${process.env.PUBLIC_URL}/images/shift1complete.png`,
       ],
       technologies: ["Python", "CLI based", "Narrative puzzle design", "OS compatibility"]
     },
@@ -138,9 +138,9 @@ const Portfolio = () => {
         "Optimized performance for VR hardware constraints",
         "Collaborated with subject matter experts to ensure training effectiveness (police officers)"
       ],
-      thumbnail: "https://i.postimg.cc/sx9qX4Cv/police.png",
+      thumbnail: `${process.env.PUBLIC_URL}/images/police.png`,
       images: [
-        "https://i.postimg.cc/tJq7vyyJ/politie.png"
+        `${process.env.PUBLIC_URL}/images/politie.png`,
       ],
       technologies: ["Unreal Engine", "Blueprint", "VR", "GPT API", "ElevenLabs API", "Custom Plugins"]
     }
