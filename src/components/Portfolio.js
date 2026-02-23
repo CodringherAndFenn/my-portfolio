@@ -55,8 +55,6 @@ const Portfolio = () => {
         `${process.env.PUBLIC_URL}/images/introlevel-all-ezgif-com-video-to-gif-converter.gif`,
         `${process.env.PUBLIC_URL}/images/introlevel-fighting-ezgif-com-video-to-gif-converter.gif`,
         `${process.env.PUBLIC_URL}/images/level2-ezgif-com-video-to-gif-converter.gif`,
-        "https://i.postimg.cc/Jz3KZzsB/stationlevel-ezgif-com-video-to-gif-converter.gif",
-        "https://i.postimg.cc/R0XRppQS/lastlevels-ezgif-com-video-to-gif-converter.gif",
       ],
       technologies: ["GameMaker", "GML", "Pixel Art with Aseprite"]
     },
